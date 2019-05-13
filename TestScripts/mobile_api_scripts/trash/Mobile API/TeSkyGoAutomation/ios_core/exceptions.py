@@ -1,0 +1,4 @@
+
+
+class APIFailed(Exception):
+    pass
