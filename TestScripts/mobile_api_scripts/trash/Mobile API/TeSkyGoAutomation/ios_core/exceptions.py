@@ -1,4 +1,0 @@
-
-
-class APIFailed(Exception):
-    pass
