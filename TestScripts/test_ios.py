@@ -42,7 +42,8 @@ scriptPath = os.path.realpath(__file__)
 #dut.validator.UploadScreenshot("imageName", Screenshot)#The Parameter Screenshot should be obtained from GetScreenshot API
 dut.Configure(args[1],args[2],args[3],args[4],scriptPath) 
 logger.Configure(args[1],args[2],args[3],args[4],scriptPath) 
-for i in range(1,3):       
+logger.Log("Modified after scheduling a Job")
+for i in range(1):       
     try: 
         if(dut.InitApp(config)): 
             time.sleep(20)
